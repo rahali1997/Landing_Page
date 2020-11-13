@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+}
+
+.logo h3 {
+  color: #fff;
+  font-size: 23px;
+}
+
+.menu {
+  padding: 6px;
+}
+
+.menu a {
+  color: #fff;
+  margin-left: 8px;
+}
+
+.menu a:hover {
+  color: turquoise;
+  transition: 0.5s;
+}
+
+.title {
+  height: 100px;
+  text-align: center;
+  color: #fff;
+  margin: 150px auto;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1::after {
+  content: "Startup";
+  animation: switch 4s infinite;
+}
+
+@keyframes switch {
+  50% {
+    content: 'Project';
+  }
+
+
+}
+
+@media (max-width: 360px) {
+  .logo {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+}
